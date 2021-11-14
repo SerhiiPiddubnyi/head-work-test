@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/head-work-test/static/css/main.eb9701b0.chunk.css",
+    "main.js": "/head-work-test/static/js/main.3af23194.chunk.js",
+    "main.js.map": "/head-work-test/static/js/main.3af23194.chunk.js.map",
+    "runtime-main.js": "/head-work-test/static/js/runtime-main.12928ee3.js",
+    "runtime-main.js.map": "/head-work-test/static/js/runtime-main.12928ee3.js.map",
+    "static/js/2.97d94c86.chunk.js": "/head-work-test/static/js/2.97d94c86.chunk.js",
+    "static/js/2.97d94c86.chunk.js.map": "/head-work-test/static/js/2.97d94c86.chunk.js.map",
+    "static/js/3.293fb075.chunk.js": "/head-work-test/static/js/3.293fb075.chunk.js",
+    "static/js/3.293fb075.chunk.js.map": "/head-work-test/static/js/3.293fb075.chunk.js.map",
+    "index.html": "/head-work-test/index.html",
+    "static/css/main.eb9701b0.chunk.css.map": "/head-work-test/static/css/main.eb9701b0.chunk.css.map",
+    "static/js/2.97d94c86.chunk.js.LICENSE.txt": "/head-work-test/static/js/2.97d94c86.chunk.js.LICENSE.txt",
+    "static/media/DishPlaceholder.25ba486d.jpg": "/head-work-test/static/media/DishPlaceholder.25ba486d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12928ee3.js",
+    "static/js/2.97d94c86.chunk.js",
+    "static/css/main.eb9701b0.chunk.css",
+    "static/js/main.3af23194.chunk.js"
+  ]
+}
