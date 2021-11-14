@@ -19,8 +19,6 @@ const Random = ({addMeal, meals}) => {
         addMeal([...meals])
     }
 
-    console.log(meals)
-
     return (
         <div>
             <div>

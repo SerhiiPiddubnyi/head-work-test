@@ -1,38 +1,51 @@
-import React from "react";
+import React from 'react';
+import style from './Meal.module.css'
+import Ingredient from './Ingredient';
+import placeholder from '../../assets/DishPlaceholder.jpg'
 
-const Meal = (props) =>{
+const Meal = ({meal}) => {
+    const ingredients =Object.keys(meal).filter((item)=>{
+        return (item.indexOf('Ingredient') > -1 && meal[item])
+    })
 
-    return(
-        <div>
-            <div>
-                <img src={props.meal.strMealThumb}/>
+
+    return (
+        <div className={style.card}>
+            <div className={style.wrapper}>
+                <div>
+                    <img src={meal.strMealThumb || placeholder}/>
+                </div>
+                <div>
+                    <div>
+                        <span>Meal name: </span><span>{meal.strMeal}</span>
+                    </div>
+                    <div>
+                        <span>Category: </span><span>{meal.strCategory}</span>
+                    </div>
+                    <div>
+                        <span>Area: </span><span>{meal.strArea}</span>
+                    </div>
+                </div>
+            </div>
+            <div className={style.wrapper}>
+                <span>Ingredients</span>
+                {ingredients.map((ingredient) => <Ingredient ingredient={ingredient} meal={meal}/>)}
             </div>
             <div>
-                <span>Meal name</span><span>{props.meal.strMeal}</span>
-            </div>
-            <div>
-                <span>Category</span><span>{props.meal.strCategory}</span>
+                <span>Instructions: <p>{meal.strInstructions}</p></span>
             </div>
             <diw>
-                <span>Area</span><span>{props.meal.strArea}</span>
+                <span>Youtube:  </span>
+                <a href={meal.strYoutube}>{meal.strYoutube}</a>
             </diw>
             <div>
-                <span>Instructions</span><span><p>{props.meal.strInstructions}.</p></span>
+                <span>Source: </span><a href={meal.strSource}>{meal.strSource}</a>
             </div>
             <div>
-               <span>Ingredients</span>
-            </div>
-            <diw>
-                <span>Youtube</span><div>https://www.youtube.com/watch?v=M1ok7mG9-Qc</div>
-            </diw>
-            <div>
-                <span>Source</span><a href={props.meal.strSource}>{props.meal.strSource}</a>
-            </div>
-            <div>
-                <span>Tags</span><span>{props.meal.strTags}</span>
+                <span>Tags: </span><span>{meal.strTags}</span>
             </div>
         </div>
     );
 }
 
-export  default Meal;
+export default Meal;
